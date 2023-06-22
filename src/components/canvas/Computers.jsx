@@ -4,26 +4,37 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+// Mobile
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  // Load the GLTF model file and store the result in the 'computer' variable
+  const computer = useGLTF("./iMac/iMac.gltf");
 
   return (
     <mesh>
+      {/* Add ambient lighting with an intensity of 0.15 and a black ground color */}
       <hemisphereLight intensity={0.15} groundColor='black' />
+
+      {/* Add a directional spotlight with the specified position, angle, penumbra, intensity, and shadow settings */}
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        position={[-20, 50, 10]} // Sets the position of the spotlight in 3D space
+        angle={0.12} // Specifies the angle of the spotlight's cone in radians
+        penumbra={1} // Controls the softness of the edges of the spotlight's cone
+        intensity={1} // Sets the intensity or brightness of the spotlight
+        castShadow // Enables the spotlight to cast shadows
+        shadow-mapSize={1024} // Specifies the size of the shadow map used for rendering shadows
       />
+
+      {/* Add an omnidirectional light source with an intensity of 1 */}
       <pointLight intensity={1} />
+
+      {/* Render the GLTF model using the 'computer.scene' object as the source.
+          Adjust the scale, position, and rotation based on the 'isMobile' prop. */}
+
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        object={computer.scene} // Sets the 3D object to be rendered as a primitive
+        scale={isMobile ? 0.7 : 0.6} // Scales the object based on the value of isMobile=0.7 else 0.75
+        position={isMobile ? [0, -3, -2.2] : [0, -2.0, -1.5]} // Sets the position of the object in 3D space based on the value of isMobile prop
+        rotation={[-0.01, -0.5, -0.1]} // Sets the rotation of the object in Euler angles
       />
     </mesh>
   );
@@ -55,23 +66,24 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      frameloop='demand' // Sets the frame loop mode to 'demand'
+      shadows // Enables the rendering of shadows in the scene
+      dpr={[1, 2]} // Sets the device pixel ratio for the canvas, controlling the quality of rendering
+      camera={{ position: [20, 3, 5], fov: 15 }} // Sets the camera position [x, y, z] and field of view
+      gl={{ preserveDrawingBuffer: true }} // Configures the WebGL context options: Set to true to allow saving the canvas image. 
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader />}> // Provides a fallback UI while the main content is loading
         <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          enableZoom={false} // Disables zooming with the mouse or touchpad
+          maxPolarAngle={Math.PI / 2} // Limits the maximum polar angle for camera rotation
+          minPolarAngle={Math.PI / 2} // Limits the minimum polar angle for camera rotation
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={isMobile} /> // Renders the Computers component with the isMobile prop
       </Suspense>
 
-      <Preload all />
+      <Preload all /> // Preloads and caches all assets used in the scene
     </Canvas>
+
   );
 };
 

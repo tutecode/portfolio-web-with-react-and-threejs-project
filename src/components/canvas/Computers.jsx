@@ -33,7 +33,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene} // Sets the 3D object to be rendered as a primitive
         scale={isMobile ? 0.7 : 0.6} // Scales the object based on the value of isMobile=0.7 else 0.75
-        position={isMobile ? [0, -3, -2.2] : [0, -2.0, -1.5]} // Sets the position of the object in 3D space based on the value of isMobile prop
+        position={isMobile ? [0, -3, -2.2] : [0, -2.0, -2.5]} // Sets the position of the object in 3D space based on the value of isMobile prop
         rotation={[-0.01, -0.5, -0.1]} // Sets the rotation of the object in Euler angles
       />
     </mesh>

@@ -16,7 +16,7 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
+    xinerlink,
     tesla,
     shopify,
     carrent,
@@ -114,18 +114,18 @@ import {
     },
   ];
   
+  /* Work Experience */
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Business Intelligence Analyst",
+      company_name: "Xinerlink",
+      icon: xinerlink,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "August 2022 - to date",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed real-time dashboards with interactive visualizations using Power BI, facilitating quick decision-making by monitoring key performance indicators and operational metrics.",
+        "Managed extensive databases using Postgresql and SQL, ensuring data integrity, reliability, and accessibility. I leveraged my strong SQL skills to design and optimize complex queries, stored procedures, and views, enabling efficient data retrieval, analysis, and reporting.",
+        "Collaborated cross-functionally to create custom reports, enabling data-driven decisions with clear visual insights."
       ],
     },
     {

@@ -72,11 +72,11 @@ const Works = () => {
   const aiProjects = projects.filter((project) => project.category === "AI");
   const web3Projects = projects.filter((project) => project.category === "Web3");
 
-  //const breakPoints = [
-  //  { width: 1, itemsToShow: 1, itemsToScroll: 1 },
-  //  { width: 1280, itemsToShow: 2, itemsToScroll: 2 },
-  //  { width: 1750, itemsToShow: 3, itemsToScroll: 3 },
-  //];
+  const breakPoints = [
+    { width: 1, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 720, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 1080, itemsToShow: 3, itemsToScroll: 3 },
+  ];
 
   return (
     <>
@@ -96,14 +96,14 @@ const Works = () => {
 
       {/* Subtitle for AI Projects */}
       <motion.div variants={textVariant()} className="mt-12">
-        <h3 className={`${styles.sectionHeadText}`}>AI Projects.</h3>
+        <h3 className={`${styles.sectionHeadText2}`}>AI projects:</h3>
       </motion.div>
 
       {/* Carousel for AI Projects */}
       <Carousel
         itemsToScroll={3} // Adjust this based on the number of cards to scroll
         itemsToShow={3}   // Adjust this based on the number of cards to show
-        //breakPoints={breakPoints} // You can use your breakPoints configuration here
+        breakPoints={breakPoints} // You can use your breakPoints configuration here
         pagination={true}
         itemPadding={[0, 48]}
         showArrows={false}
@@ -124,22 +124,22 @@ const Works = () => {
 
       {/* Subtitle for Web3 Projects */}
       <motion.div variants={textVariant()} className="mt-12">
-        <h3 className={`${styles.sectionHeadText}`}>Web3 Projects.</h3>
+        <h3 className={`${styles.sectionHeadText2}`}>Web3 projects:</h3>
       </motion.div>
 
       {/* Carousel for Web3 Projects */}
       <Carousel
         itemsToScroll={3} // Adjust this based on the number of cards to scroll
         itemsToShow={3}   // Adjust this based on the number of cards to show
-        //breakPoints={breakPoints} // You can use your breakPoints configuration here
+        breakPoints={breakPoints} // You can use your breakPoints configuration here
         pagination={true}
         itemPadding={[0, 48]}
         showArrows={false}
         enableAutoPlay={true}
-        autoPlaySpeed={2000}
+        autoPlaySpeed={5000}
         focusOnSelect={false}
         easing={"ease"}
-        transitionMs={1000}
+        transitionMs={5000}
         tiltEasing={"ease"}
         enableTilt={false}
       >

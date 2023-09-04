@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import performance from "./performance.png";
 
+// Import tech
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -21,11 +22,16 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python.png";
+import dart from "./tech/dart.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import xinerlink from "./company/xinerlink.png";
 import tesla from "./company/tesla.png";
+import xinerlink from "./company/xinerlink.png";
+import anyoneai from "./company/anyoneai.png";
+import freqtrade from "./company/freqtrade.png";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -56,9 +62,13 @@ export {
   threejs,
   meta,
   shopify,
+  freqtrade,
   xinerlink,
   tesla,
+  anyoneai,
   carrent,
   jobit,
   tripguide,
+  python,
+  dart
 };

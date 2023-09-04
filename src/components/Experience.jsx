@@ -5,13 +5,16 @@ import {
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
+// Importing CSS styles for the timeline component
 import "react-vertical-timeline-component/style.min.css";
 
+// Importing styles and data from external files
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+// Component for rendering individual experience cards in the timeline
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -56,6 +59,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
+// Component for displaying the entire "Work Experience" section
 const Experience = () => {
   return (
     <>
@@ -82,4 +86,5 @@ const Experience = () => {
   );
 };
 
+// Exporting the Experience component wrapped with SectionWrapper
 export default SectionWrapper(Experience, "work");

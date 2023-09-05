@@ -204,19 +204,21 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Matías's infectious curiosity and team-focused approach drive continuous improvement. He excels in both technical problem-solving and motivating the team to excel further.",
+      name: "Gonzalo Diez",
+      designation: "Sr. Data Analyst",
+      company: "Mondelez",
+      image: "https://media.licdn.com/dms/image/D4D03AQHf07SJk-jr8w/profile-displayphoto-shrink_100_100/0/1693753270034?e=1699488000&v=beta&t=-8cv07WZ_NxNaL-1vFFre5mpBs52Z2Dk-rbwo12YSwM",
+      linkedin: "https://www.linkedin.com/in/gonzalo-damian-diez/"
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Matías is an exceptional colleague with strong technical problem-solving skills in artificial intelligence. Highly qualified and reliable for any machine learning role.",
+      name: "Matías Reyes",
+      designation: "Data Analyst",
+      company: "AnyoneAI",
+      image: "https://media.licdn.com/dms/image/D5603AQGIuW6K-U2P-Q/profile-displayphoto-shrink_200_200/0/1635994225725?e=1699488000&v=beta&t=tAeoBjQAnPA1NYI64FxfKvWJWeluoDrmgRBHXsOCOOI",
+      linkedin: "https://www.linkedin.com/in/developer-matias-reyes/"
     },
     {
       testimonial:

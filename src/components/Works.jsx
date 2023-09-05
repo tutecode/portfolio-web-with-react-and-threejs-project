@@ -74,14 +74,14 @@ const Works = () => {
 
   const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
-    { width: 720, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 1080, itemsToShow: 3, itemsToScroll: 3 },
+    { width: 720, itemsToShow: 2, itemsToScroll: 1 },
+    { width: 1080, itemsToShow: 3, itemsToScroll: 1 },
   ];
 
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -101,19 +101,22 @@ const Works = () => {
 
       {/* Carousel for AI Projects */}
       <Carousel
-        itemsToScroll={3} // Adjust this based on the number of cards to scroll
-        itemsToShow={3}   // Adjust this based on the number of cards to show
-        breakPoints={breakPoints} // You can use your breakPoints configuration here
-        pagination={true}
-        itemPadding={[0, 48]}
-        showArrows={false}
-        enableAutoPlay={true}
-        autoPlaySpeed={5000}
-        focusOnSelect={false}
-        easing={"ease"}
-        transitionMs={5000}
-        tiltEasing={"ease"}
-        enableTilt={false}
+        isRTL={false}
+        pagination={true} // Show dots for paging
+        transitionMs={8000} // Animation speed
+        easing={"ease"} // transition easing pattern
+        tiltEasing={"ease"} // transition easing pattern for the tilt
+        enableTilt={false} // The “bump” animation when reaching the last item
+        //itemsToShow={3}   // Number of visible items
+        //itemsToScroll={1} // Number of items to scroll
+        breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
+        initialActiveIndex={0} // The initial active index when the component mounts
+        showArrows={false} // Show the arrow buttons
+        focusOnSelect={false} // Go to item on click
+        itemPadding={[0, 48]} // A padding for each element
+        enableAutoPlay={true} // Enable or disable auto play
+        autoPlaySpeed={8000} // Set auto play speed (ms)
+        
       >
         {aiProjects.map((project, index) => (
           <div key={`ai-project-${index}`}>
@@ -129,19 +132,21 @@ const Works = () => {
 
       {/* Carousel for Web3 Projects */}
       <Carousel
-        itemsToScroll={3} // Adjust this based on the number of cards to scroll
-        itemsToShow={3}   // Adjust this based on the number of cards to show
-        breakPoints={breakPoints} // You can use your breakPoints configuration here
-        pagination={true}
-        itemPadding={[0, 48]}
-        showArrows={false}
-        enableAutoPlay={true}
-        autoPlaySpeed={5000}
-        focusOnSelect={false}
-        easing={"ease"}
-        transitionMs={5000}
-        tiltEasing={"ease"}
-        enableTilt={false}
+        isRTL={false}
+        pagination={true} // Show dots for paging
+        transitionMs={8000} // Animation speed
+        easing={"ease"} // transition easing pattern
+        tiltEasing={"ease"} // transition easing pattern for the tilt
+        enableTilt={false} // The “bump” animation when reaching the last item
+        //itemsToShow={3}   // Number of visible items
+        //itemsToScroll={1} // Number of items to scroll
+        breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
+        initialActiveIndex={0} // The initial active index when the component mounts
+        showArrows={false} // Show the arrow buttons
+        focusOnSelect={false} // Go to item on click
+        itemPadding={[0, 48]} // A padding for each element
+        enableAutoPlay={true} // Enable or disable auto play
+        autoPlaySpeed={8000} // Set auto play speed (ms)
       >
         {web3Projects.map((project, index) => (
           <div key={`web3-project-${index}`}>

@@ -6,7 +6,14 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import performance from "./performance.png";
+
+// Import About icons
+import dataanalyst from "./about/dataanalyst.png";
+import ai from "./about/ai.png";
+import cryptocurrency from "./about/cryptocurrency.png";
+import entrepreneur from "./about/entrepreneur.png";
+import programmer from "./about/programmer.png";
+import productive from "./about/productive.png";
 
 // Import tech
 import css from "./tech/css.png";
@@ -43,7 +50,12 @@ export {
   creator,
   mobile,
   web,
-  performance,
+  dataanalyst,
+  programmer,
+  productive,
+  ai,
+  cryptocurrency,
+  entrepreneur,
   github,
   menu,
   close,

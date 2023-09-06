@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Carousel from '@itseasy21/react-elastic-carousel';
-
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -75,8 +74,8 @@ const Feedbacks = () => {
       <div className={`mt-12 bg-black-100 rounded-[20px]`}>
 
         <div className={`mt-12 bg-tertiary rounded-2xl min-h-[300px]`}>
-        <div style={{ height: '20px' }}></div>
-        
+          <div style={{ height: '20px' }}></div>
+
           <Carousel
             isRTL={false}
             pagination={true} // Show dots for paging

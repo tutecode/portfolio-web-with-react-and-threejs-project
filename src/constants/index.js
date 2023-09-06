@@ -2,7 +2,12 @@ import {
     mobile,
     backend,
     creator,
-    performance,
+    dataanalyst,
+    cryptocurrency,
+    programmer,
+    entrepreneur,
+    productive,
+    ai,
     javascript,
     typescript,
     html,
@@ -46,20 +51,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: performance,
+      title: "AI Developer",
+      icon: ai,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Solopreneur",
+      icon: entrepreneur,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Productive",
+      icon: productive,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Crypto Advocated",
+      icon: cryptocurrency,
     },
   ];
   
@@ -207,7 +212,7 @@ import {
         "Matías's infectious curiosity and team-focused approach drive continuous improvement. He excels in both technical problem-solving and motivating the team to excel further.",
       name: "Gonzalo Diez",
       designation: "Sr. Data Analyst",
-      company: "Mondelez",
+      company: "Mondelēz",
       image: "https://media.licdn.com/dms/image/D4D03AQHf07SJk-jr8w/profile-displayphoto-shrink_100_100/0/1693753270034?e=1699488000&v=beta&t=-8cv07WZ_NxNaL-1vFFre5mpBs52Z2Dk-rbwo12YSwM",
       linkedin: "https://www.linkedin.com/in/gonzalo-damian-diez/"
     },
@@ -215,19 +220,47 @@ import {
       testimonial:
         "Matías is an exceptional colleague with strong technical problem-solving skills in artificial intelligence. Highly qualified and reliable for any machine learning role.",
       name: "Matías Reyes",
-      designation: "Data Analyst",
+      designation: "ML Engineer",
       company: "AnyoneAI",
       image: "https://media.licdn.com/dms/image/D5603AQGIuW6K-U2P-Q/profile-displayphoto-shrink_200_200/0/1635994225725?e=1699488000&v=beta&t=tAeoBjQAnPA1NYI64FxfKvWJWeluoDrmgRBHXsOCOOI",
       linkedin: "https://www.linkedin.com/in/developer-matias-reyes/"
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
+      name: "Lucio Rapetti",
+      designation: "ML Engineer",
+      company: "AnyoneAI",
+      image: "https://media.licdn.com/dms/image/D4D03AQEuaLhNfNGY_Q/profile-displayphoto-shrink_100_100/0/1689263899742?e=1699488000&v=beta&t=cMztC04f77UoTJ9G1JTe32q8LwRjwqQvMYYsB0OFURE",
+      linkedin: "https://www.linkedin.com/in/lucio-f-rapetti-ab619235/"
     },
+    {
+      testimonial:
+        "Matias, a colleague for over a year, shines in problem-solving and commitment in our 6-month Machine Learning project. A skilled professional and friend; highly recommended.",
+      name: "Yessid Rios",
+      designation: "ML Engineer",
+      company: "AnyoneAI",
+      image: "https://media.licdn.com/dms/image/C5603AQGRThEUbMUAEQ/profile-displayphoto-shrink_100_100/0/1637270545970?e=1699488000&v=beta&t=K1IAl-OS-0w1vSGwx64VM96i-dyzltPp0YZA8fLnioY",
+      linkedin: "https://www.linkedin.com/in/yessid-rios-prada/"
+    },
+    //{
+    //  testimonial:
+    //    "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
+    //  name: "Lucio Rapetti",
+    //  designation: "ML Engineer",
+    //  company: "AnyoneAI",
+    //  image: "https://media.licdn.com/dms/image/D4D03AQEuaLhNfNGY_Q/profile-displayphoto-shrink_100_100/0/1689263899742?e=1699488000&v=beta&t=cMztC04f77UoTJ9G1JTe32q8LwRjwqQvMYYsB0OFURE",
+    //  linkedin: "https://www.linkedin.com/in/lucio-f-rapetti-ab619235/"
+    //},
+    //{
+    //  testimonial:
+    //    "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
+    //  name: "Lucio Rapetti",
+    //  designation: "ML Engineer",
+    //  company: "AnyoneAI",
+    //  image: "https://media.licdn.com/dms/image/D4D03AQEuaLhNfNGY_Q/profile-displayphoto-shrink_100_100/0/1689263899742?e=1699488000&v=beta&t=cMztC04f77UoTJ9G1JTe32q8LwRjwqQvMYYsB0OFURE",
+    //  linkedin: "https://www.linkedin.com/in/lucio-f-rapetti-ab619235/"
+    //},
   ];
   
   const projects = [

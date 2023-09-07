@@ -191,7 +191,7 @@ import {
     },
     {
       title: "Data Scientist for Finance",
-      company_name: "Freelance",
+      company_name: "Freelancer",
       icon: freqtrade,
       iconBg: "#FFFFFF",
       date: "Sep 2020 - Sep 2021",
@@ -208,7 +208,7 @@ import {
     },
     {
       title: "Mobile App Developer",
-      company_name: "Freelance",
+      company_name: "Freelancer",
       icon: android,
       iconBg: "#E6DEDD",
       date: "Mar 2019 - Sep 2020",

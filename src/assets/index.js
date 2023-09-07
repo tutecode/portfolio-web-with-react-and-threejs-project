@@ -7,13 +7,14 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-// Import About icons
+// Import about icons
 import dataanalyst from "./about/dataanalyst.png";
 import ai from "./about/ai.png";
 import cryptocurrency from "./about/cryptocurrency.png";
 import entrepreneur from "./about/entrepreneur.png";
 import programmer from "./about/programmer.png";
 import productive from "./about/productive.png";
+import learning from "./about/learning.png";
 
 // Import tech
 import css from "./tech/css.png";
@@ -32,13 +33,14 @@ import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
 import dart from "./tech/dart.png";
 
+//  Import company
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import tesla from "./company/tesla.png";
 import xinerlink from "./company/xinerlink.png";
 import anyoneai from "./company/anyoneai.png";
 import freqtrade from "./company/freqtrade.png";
-
+import android from "./company/android.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -82,5 +84,7 @@ export {
   jobit,
   tripguide,
   python,
-  dart
+  dart,
+  android,
+  learning
 };

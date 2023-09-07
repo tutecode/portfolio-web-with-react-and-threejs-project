@@ -32,6 +32,8 @@ import {
     threejs,
     python,
     dart,
+    android,
+    learning
   } from "../assets";
   
   export const navLinks = [
@@ -149,18 +151,6 @@ import {
   /* Work Experience */
   const experiences = [
     {
-      title: "Business Intelligence Analyst",
-      company_name: "Xinerlink",
-      icon: xinerlink,
-      iconBg: "#FFFFFF",
-      date: "Aug 2022 - to date",
-      points: [
-        "Developed real-time dashboards with interactive visualizations using Power BI, facilitating quick decision-making by monitoring key performance indicators and operational metrics.",
-        "Managed extensive databases using PostgreSQL and SQL, ensuring data integrity, reliability, and accessibility. I leveraged my strong SQL skills to design and optimize complex queries, stored procedures, and views, enabling efficient data retrieval, analysis, and reporting.",
-        "Collaborated cross-functionally to create custom reports, enabling data-driven decisions with clear visual insights."
-      ],
-    },
-    {
       title: "Machine Learning Engineer",
       company_name: "AnyoneAI",
       icon: anyoneai,
@@ -175,8 +165,33 @@ import {
       ],
     },
     {
-      title: "Algorithmic Trader / Quantitative Analyst",
-      company_name: "Freqtrade",
+      title: "Business Intelligence Analyst",
+      company_name: "Xinerlink",
+      icon: xinerlink,
+      iconBg: "#FFFFFF",
+      date: "Aug 2022 - to date",
+      points: [
+        "Developed real-time dashboards with interactive visualizations using Power BI, facilitating quick decision-making by monitoring key performance indicators and operational metrics.",
+        "Managed extensive databases using PostgreSQL and SQL, ensuring data integrity, reliability, and accessibility. I leveraged my strong SQL skills to design and optimize complex queries, stored procedures, and views, enabling efficient data retrieval, analysis, and reporting.",
+        "Collaborated cross-functionally to create custom reports, enabling data-driven decisions with clear visual insights."
+      ],
+    },
+    {
+      title: "Professional growth",
+      company_name: "During this career break, I pursued a path of continuous professional development and broadened my skill set through various enriching experiences:",
+      icon: learning,
+      iconBg: "#FFFFFF",
+      date: "Sep 2021 - Aug 2022",
+      points: [
+        "Skill Refinement: Actively honed my skills as a Data Scientist, dedicating time to enhancing my expertise in data analysis, machine learning, and data-driven decision-making.",
+        "Renowned Training: Engaged in rigorous training programs provided by esteemed institutions like FIUBA Consulting, ensuring that I stayed current with industry best practices and emerging trends in data science.",
+        "Real-world Challenges: Seized the invaluable opportunity to participate in a demanding Dataton organized by Media.Monks in collaboration with Mercadolibre. This event allowed me to apply my data science skills to solve real-life challenges, further sharpening my problem-solving abilities.",
+        "Collaborative Endeavors: Demonstrated my dedication to professional growth by actively contributing to a variety of exciting projects at Alkemy. Collaborating with multidisciplinary teams, I leveraged my knowledge to develop and implement innovative solutions, thereby solidifying my expertise in data science."
+      ],
+    },
+    {
+      title: "Data Scientist for Finance",
+      company_name: "Freelance",
       icon: freqtrade,
       iconBg: "#FFFFFF",
       date: "Sep 2020 - Sep 2021",
@@ -191,19 +206,20 @@ import {
         "Conducted thorough analysis of backtesting data and Freqtrade trading history stored in SQL databases, leveraging automated standard plots and interactive data environments for comprehensive reporting and insights."
       ],
     },
-    //{
-    //  title: "Full stack Developer",
-    //  company_name: "Meta",
-    //  icon: meta,
-    //  iconBg: "#E6DEDD",
-    //  date: "Jan 2023 - Present",
-    //  points: [
-    //    "Developing and maintaining web applications using React.js and other related technologies.",
-    //    "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //    "Implementing responsive design and ensuring cross-browser compatibility.",
-    //    "Participating in code reviews and providing constructive feedback to other developers.",
-    //  ],
-    //},
+    {
+      title: "Mobile App Developer",
+      company_name: "Freelance",
+      icon: android,
+      iconBg: "#E6DEDD",
+      date: "Mar 2019 - Sep 2020",
+      points: [
+        "Developed and published three Flutter/Dart mobile apps for Android.",
+        "Designed and implemented user interfaces that are intuitive and visually appealing.",
+        "Conducted regular app testing, debugging, and optimization to ensure top performance.",
+        "Implemented ASO strategies to improve app visibility and increase downloads.",
+        "Achieved 1000+ downloads for one application.",
+      ],
+    },
   ];
   
   const testimonials = [

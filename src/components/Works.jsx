@@ -96,7 +96,7 @@ const Works = () => {
 
       {/* Subtitle for AI Projects */}
       <motion.div variants={textVariant()} className="mt-12">
-        <h3 className={`${styles.sectionHeadText2}`}>AI projects:</h3>
+        <h3 className={`${styles.sectionHeadText2}`}>Artificial Intelligence Projects:</h3>
       </motion.div>
 
       {/* Carousel for AI Projects */}
@@ -125,12 +125,73 @@ const Works = () => {
         ))}
       </Carousel>
 
-      {/* Subtitle for Web3 Projects */}
+      {/* Subtitle for Web Devolopment Projects */}
       <motion.div variants={textVariant()} className="mt-12">
-        <h3 className={`${styles.sectionHeadText2}`}>Web3 projects:</h3>
+        <h3 className={`${styles.sectionHeadText2}`}>Web Development Projects:</h3>
       </motion.div>
 
-      {/* Carousel for Web3 Projects */}
+      {/* Carousel for Web Devolopment Projects */}
+      <Carousel
+        isRTL={false}
+        pagination={true} // Show dots for paging
+        transitionMs={8000} // Animation speed
+        easing={"ease"} // transition easing pattern
+        tiltEasing={"ease"} // transition easing pattern for the tilt
+        enableTilt={false} // The “bump” animation when reaching the last item
+        //itemsToShow={3}   // Number of visible items
+        //itemsToScroll={1} // Number of items to scroll
+        breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
+        initialActiveIndex={0} // The initial active index when the component mounts
+        showArrows={false} // Show the arrow buttons
+        focusOnSelect={false} // Go to item on click
+        itemPadding={[0, 48]} // A padding for each element
+        enableAutoPlay={true} // Enable or disable auto play
+        autoPlaySpeed={8000} // Set auto play speed (ms)
+        
+      >
+        {aiProjects.map((project, index) => (
+          <div key={`ai-project-${index}`}>
+            <ProjectCard index={index} {...project} />
+          </div>
+        ))}
+      </Carousel>
+
+      {/* Subtitle for Mobile Apps Projects */}
+      <motion.div variants={textVariant()} className="mt-12">
+        <h3 className={`${styles.sectionHeadText2}`}>Mobile Apps Projects:</h3>
+      </motion.div>
+
+      {/* Carousel for Mobile Apps Projects */}
+      <Carousel
+        isRTL={false}
+        pagination={true} // Show dots for paging
+        transitionMs={8000} // Animation speed
+        easing={"ease"} // transition easing pattern
+        tiltEasing={"ease"} // transition easing pattern for the tilt
+        enableTilt={false} // The “bump” animation when reaching the last item
+        //itemsToShow={3}   // Number of visible items
+        //itemsToScroll={1} // Number of items to scroll
+        breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
+        initialActiveIndex={0} // The initial active index when the component mounts
+        showArrows={false} // Show the arrow buttons
+        focusOnSelect={false} // Go to item on click
+        itemPadding={[0, 48]} // A padding for each element
+        enableAutoPlay={true} // Enable or disable auto play
+        autoPlaySpeed={8000} // Set auto play speed (ms)
+      >
+        {web3Projects.map((project, index) => (
+          <div key={`web3-project-${index}`}>
+            <ProjectCard index={index} {...project} />
+          </div>
+        ))}
+      </Carousel>
+
+      {/* Subtitle for Hackatones Projects */}
+            <motion.div variants={textVariant()} className="mt-12">
+        <h3 className={`${styles.sectionHeadText2}`}>Hackatones Projects:</h3>
+      </motion.div>
+
+      {/* Carousel for Hackatones Projects */}
       <Carousel
         isRTL={false}
         pagination={true} // Show dots for paging

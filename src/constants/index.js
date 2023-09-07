@@ -191,19 +191,19 @@ import {
         "Conducted thorough analysis of backtesting data and Freqtrade trading history stored in SQL databases, leveraging automated standard plots and interactive data environments for comprehensive reporting and insights."
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    //{
+    //  title: "Full stack Developer",
+    //  company_name: "Meta",
+    //  icon: meta,
+    //  iconBg: "#E6DEDD",
+    //  date: "Jan 2023 - Present",
+    //  points: [
+    //    "Developing and maintaining web applications using React.js and other related technologies.",
+    //    "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //    "Implementing responsive design and ensuring cross-browser compatibility.",
+    //    "Participating in code reviews and providing constructive feedback to other developers.",
+    //  ],
+    //},
   ];
   
   const testimonials = [
@@ -265,25 +265,57 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Credit Guard",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "API service that is backed by a machine learning model that will accept a financial profile and will be able to predict a credit risk score for that profile.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Python",
+          color: "orange-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "FastAPI",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Scikit-learn",
+          color: "new-color-text-gradient",
+        },
+        {
+          name: "Pandas",
+          color: "new-color3-text-gradient",
+        },
+        {
+          name: "Numpy",
+          color: "blue-text-gradient2",
+        },
+        {
+          name: "HTML",
+          color: "new-color2-text-gradient",
+        },
+        {
+          name: "CSS",
           color: "pink-text-gradient",
+        },
+        {
+          name: "Redis",
+          color: "yellow-text-gradient2",
+        },
+        {
+          name: "Docker",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tensorflow",
+          color: "new-color5-text-gradient",
+        },
+        {
+          name: "Jupyter Notebook",
+          color: "red-blue-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/tutecode/credit-risk-analysis",
       category: "AI",
     },
     {

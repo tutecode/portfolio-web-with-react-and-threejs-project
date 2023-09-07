@@ -1,40 +1,42 @@
 import {
-    mobile,
-    backend,
-    creator,
-    dataanalyst,
-    cryptocurrency,
-    programmer,
-    entrepreneur,
-    productive,
-    ai,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    xinerlink,
-    //tesla,
-    anyoneai,
-    //shopify,
-    freqtrade,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-    python,
-    dart,
-    android,
-    learning
-  } from "../assets";
+  agency,
+  mobile,
+  backend,
+  creator,
+  dataanalyst,
+  cryptocurrency,
+  programmer,
+  entrepreneur,
+  productive,
+  ai,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  meta,
+  xinerlink,
+  //tesla,
+  anyoneai,
+  //shopify,
+  freqtrade,
+  carrent,
+  jobit,
+  tripguide,
+  threejs,
+  python,
+  dart,
+  android,
+  learning,
+  creditguard
+} from "../assets";
   
   export const navLinks = [
     {
@@ -180,7 +182,7 @@ import {
       title: "Professional growth",
       company_name: "During this career break, I pursued a path of continuous professional development and broadened my skill set through various enriching experiences:",
       icon: learning,
-      iconBg: "#FFFFFF",
+      iconBg: "#050816",
       date: "Sep 2021 - Aug 2022",
       points: [
         "Skill Refinement: Actively honed my skills as a Data Scientist, dedicating time to enhancing my expertise in data analysis, machine learning, and data-driven decision-making.",
@@ -243,9 +245,18 @@ import {
     },
     {
       testimonial:
+        "Matias is a dynamic AI and data science professional with creativity, adaptability, and a strong work ethic. Highly recommended for his diverse skills and impact-driven approach.",
+      name: "Jhonatan Camasca",
+      designation: "Data Scientist",
+      company: "Deloitte",
+      image: "https://media.licdn.com/dms/image/C4E03AQGmas6u5bdk1g/profile-displayphoto-shrink_200_200/0/1644886382126?e=1699488000&v=beta&t=iNgqhqSXVguXl2GliuNC0FLD2hCdjjSyBfIkSbEww_Y",
+      linkedin: "https://www.linkedin.com/in/jhonatancamasca/"
+    },
+    {
+      testimonial:
         "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
       name: "Lucio Rapetti",
-      designation: "ML Engineer",
+      designation: "AI Developer",
       company: "AnyoneAI",
       image: "https://media.licdn.com/dms/image/D4D03AQEuaLhNfNGY_Q/profile-displayphoto-shrink_100_100/0/1689263899742?e=1699488000&v=beta&t=cMztC04f77UoTJ9G1JTe32q8LwRjwqQvMYYsB0OFURE",
       linkedin: "https://www.linkedin.com/in/lucio-f-rapetti-ab619235/"
@@ -254,20 +265,11 @@ import {
       testimonial:
         "Matias, a colleague for over a year, shines in problem-solving and commitment in our 6-month Machine Learning project. A skilled professional and friend; highly recommended.",
       name: "Yessid Rios",
-      designation: "ML Engineer",
+      designation: "Tutor ML Engineer",
       company: "AnyoneAI",
       image: "https://media.licdn.com/dms/image/C5603AQGRThEUbMUAEQ/profile-displayphoto-shrink_100_100/0/1637270545970?e=1699488000&v=beta&t=K1IAl-OS-0w1vSGwx64VM96i-dyzltPp0YZA8fLnioY",
       linkedin: "https://www.linkedin.com/in/yessid-rios-prada/"
     },
-    //{
-    //  testimonial:
-    //    "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
-    //  name: "Lucio Rapetti",
-    //  designation: "ML Engineer",
-    //  company: "AnyoneAI",
-    //  image: "https://media.licdn.com/dms/image/D4D03AQEuaLhNfNGY_Q/profile-displayphoto-shrink_100_100/0/1689263899742?e=1699488000&v=beta&t=cMztC04f77UoTJ9G1JTe32q8LwRjwqQvMYYsB0OFURE",
-    //  linkedin: "https://www.linkedin.com/in/lucio-f-rapetti-ab619235/"
-    //},
     //{
     //  testimonial:
     //    "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
@@ -330,12 +332,12 @@ import {
           color: "red-blue-text-gradient",
         },
       ],
-      image: carrent,
+      image: creditguard,
       source_code_link: "https://github.com/tutecode/credit-risk-analysis",
       category: "AI",
     },
     {
-      name: "Car Rent",
+      name: "Marketing Agency",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -352,9 +354,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-      category: "AI",
+      image: agency,
+      source_code_link: "https://github.com/tutecode/FullStack-with-Django-and-React",
+      category: "web_development",
     },
     {
       name: "Car Rent",

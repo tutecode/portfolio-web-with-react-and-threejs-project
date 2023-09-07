@@ -71,6 +71,7 @@ const ProjectCard = ({
 const Works = () => {
   const aiProjects = projects.filter((project) => project.category === "AI");
   const web3Projects = projects.filter((project) => project.category === "Web3");
+  const webDevProjects = projects.filter((project) => project.category === "web_development");
 
   const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
@@ -149,7 +150,7 @@ const Works = () => {
         autoPlaySpeed={8000} // Set auto play speed (ms)
         
       >
-        {aiProjects.map((project, index) => (
+        {webDevProjects.map((project, index) => (
           <div key={`ai-project-${index}`}>
             <ProjectCard index={index} {...project} />
           </div>

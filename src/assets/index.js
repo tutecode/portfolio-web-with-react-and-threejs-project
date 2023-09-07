@@ -42,11 +42,16 @@ import anyoneai from "./company/anyoneai.png";
 import freqtrade from "./company/freqtrade.png";
 import android from "./company/android.png";
 
+// Import projects/works
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import creditguard from "./works/creditguard.jpeg";
+import agency from "./works/agency.png";
 
 export {
+  agency,
+  creditguard,
   logo,
   backend,
   creator,

@@ -53,6 +53,10 @@ import creditguard from "./works/creditguard.jpeg";
 import agency from "./works/agency.png";
 import moviesreview from "./works/moviesreview.jpg";
 import vehicleclassification from "./works/vehicleclassification.png";
+import cryptochallenge from "./works/cryptochallenge.png";
+import vertexai from "./works/vertexai.png";
+
+
 
 export {
   agency,
@@ -101,4 +105,6 @@ export {
   learning,
   pythondeveloper,
   machinelearningengineer,
+  cryptochallenge,
+  vertexai,
 };

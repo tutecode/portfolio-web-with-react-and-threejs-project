@@ -72,6 +72,8 @@ const Works = () => {
   const aiProjects = projects.filter((project) => project.category === "AI");
   const web3Projects = projects.filter((project) => project.category === "Web3");
   const webDevProjects = projects.filter((project) => project.category === "web_development");
+  const hackatonProjects = projects.filter((project) => project.category === "hackaton");
+
 
   const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
@@ -81,22 +83,8 @@ const Works = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
-
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
-        </motion.p>
-      </div>
-
       {/* Subtitle for AI Projects */}
-      <motion.div variants={textVariant()} className="mt-12">
+      <motion.div variants={textVariant()} className="">
         <h3 className={`${styles.sectionHeadText2}`}>Artificial Intelligence Projects:</h3>
       </motion.div>
 
@@ -189,7 +177,7 @@ const Works = () => {
 
       {/* Subtitle for Hackatones Projects */}
             <motion.div variants={textVariant()} className="mt-12">
-        <h3 className={`${styles.sectionHeadText2}`}>Hackatones Projects:</h3>
+        <h3 className={`${styles.sectionHeadText2}`}>Hackathon Projects:</h3>
       </motion.div>
 
       {/* Carousel for Hackatones Projects */}
@@ -210,8 +198,8 @@ const Works = () => {
         enableAutoPlay={true} // Enable or disable auto play
         autoPlaySpeed={8000} // Set auto play speed (ms)
       >
-        {web3Projects.map((project, index) => (
-          <div key={`web3-project-${index}`}>
+        {hackatonProjects.map((project, index) => (
+          <div key={`hackaton-project-${index}`}>
             <ProjectCard index={index} {...project} />
           </div>
         ))}

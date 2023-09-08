@@ -40,6 +40,8 @@ import {
   moviesreview,
   pythondeveloper,
   machinelearningengineer,
+  cryptochallenge,
+  vertexai,
 } from "../assets";
   
   export const navLinks = [
@@ -407,34 +409,30 @@ import {
       category: "AI",
     },
     {
-      name: "Car Rent",
+      name: "Crypto Challenge",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Evaluating a newly launched cryptocurrency initiative at Mercado Libre Brasil using three datasets (transactions, users, accounts) from Dec 23 to Dec 31, post-launch period.",
       tags: [
         {
-          name: "react",
+          name: "Power BI",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Tableau",
           color: "green-text-gradient",
         },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-      category: "AI",
+      image: cryptochallenge,
+      source_code_link: "https://www.youtube.com/watch?v=sBd1Av86CiI",
+      category: "hackaton",
     },
     {
-      name: "Job IT",
+      name: "Google Vertex AI Hackathon",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
         {
-          name: "react",
+          name: "",
           color: "blue-text-gradient",
         },
         {
@@ -446,32 +444,32 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-      category: "AI",
+      image: vertexai,
+      source_code_link: "https://github.com/tutecode/Google-VertexAI-FastAPI",
+      category: "hackaton",
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-      category: "Web3",
-    },
+    //{
+    //  name: "Trip Guide",
+    //  description:
+    //    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //  tags: [
+    //    {
+    //      name: "nextjs",
+    //      color: "blue-text-gradient",
+    //    },
+    //    {
+    //      name: "supabase",
+    //      color: "green-text-gradient",
+    //    },
+    //    {
+    //      name: "css",
+    //      color: "pink-text-gradient",
+    //    },
+    //  ],
+    //  image: tripguide,
+    //  source_code_link: "https://github.com/",
+    //  category: "Web3",
+    //},
   ];
   
   export { services, technologies, experiences, testimonials, projects };

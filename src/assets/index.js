@@ -15,6 +15,9 @@ import entrepreneur from "./about/entrepreneur.png";
 import programmer from "./about/programmer.png";
 import productive from "./about/productive.png";
 import learning from "./about/learning.png";
+import pythondeveloper from "./about/pythondeveloper.png";
+import machinelearningengineer from "./about/machinelearningengineer.png";
+
 
 // Import tech
 import css from "./tech/css.png";
@@ -48,10 +51,14 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import creditguard from "./works/creditguard.jpeg";
 import agency from "./works/agency.png";
+import moviesreview from "./works/moviesreview.jpg";
+import vehicleclassification from "./works/vehicleclassification.png";
 
 export {
   agency,
   creditguard,
+  moviesreview,
+  vehicleclassification,
   logo,
   backend,
   creator,
@@ -91,5 +98,7 @@ export {
   python,
   dart,
   android,
-  learning
+  learning,
+  pythondeveloper,
+  machinelearningengineer,
 };

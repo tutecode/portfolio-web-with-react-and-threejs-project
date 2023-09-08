@@ -4,6 +4,7 @@ import {
   backend,
   creator,
   dataanalyst,
+  vehicleclassification,
   cryptocurrency,
   programmer,
   entrepreneur,
@@ -35,7 +36,10 @@ import {
   dart,
   android,
   learning,
-  creditguard
+  creditguard,
+  moviesreview,
+  pythondeveloper,
+  machinelearningengineer,
 } from "../assets";
   
   export const navLinks = [
@@ -55,20 +59,20 @@ import {
   
   const services = [
     {
+      title: "Python Developer",
+      icon: pythondeveloper,
+    },
+    {
       title: "AI Developer",
       icon: ai,
     },
     {
-      title: "Solopreneur",
-      icon: entrepreneur,
+      title: "ML Engineer",
+      icon: machinelearningengineer,
     },
     {
-      title: "Productive",
-      icon: productive,
-    },
-    {
-      title: "Crypto Advocated",
-      icon: cryptocurrency,
+      title: "Full Stack Developer",
+      icon: programmer,
     },
   ];
   
@@ -359,7 +363,7 @@ import {
       category: "web_development",
     },
     {
-      name: "Car Rent",
+      name: "Sentiment Analysis on Movies Review",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -376,12 +380,12 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: moviesreview,
+      source_code_link: "https://github.com/tutecode/sentiment-analysis-on-movies-reviews/tree/main",
       category: "AI",
     },
     {
-      name: "Car Rent",
+      name: "Vehicle Classification",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -398,8 +402,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: vehicleclassification,
+      source_code_link: "https://github.com/tutecode/vehicle-classification",
       category: "AI",
     },
     {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Carousel from '@itseasy21/react-elastic-carousel';
 import { styles } from "../styles";
@@ -13,7 +13,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
-  linkedin,
+  linkedin, // Add the linkedin prop
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -26,8 +26,9 @@ const FeedbackCard = ({
 
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
+          {/* Add an anchor tag for the name with the href attribute */}
           <a
-            href={linkedin}
+            href={linkedin} // Use the nameLink prop as the href
             target="_blank"
             rel="noopener noreferrer"
             className='text-white font-medium text-[16px] blue-text-gradient hover:underline'
@@ -54,33 +55,39 @@ const FeedbackCard = ({
   </motion.div>
 );
 
+
+
 const Feedbacks = () => {
+
   const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
     { width: 720, itemsToShow: 2, itemsToScroll: 1 },
     { width: 1080, itemsToShow: 3, itemsToScroll: 1 },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
   const carouselRef = useRef(null);
 
   useEffect(() => {
-    const totalItems = testimonials.length;
     const interval = setInterval(() => {
-      if (currentSlide === totalItems - 1) {
-        setCurrentSlide(0);
-        carouselRef.current.goTo(0);
-      } else {
-        setCurrentSlide((prevSlide) => prevSlide + 1);
-        carouselRef.current.goTo(currentSlide + 1);
+      if (carouselRef.current) {
+        const totalItems = carouselRef.current.state.totalItems;
+        const currentItem = carouselRef.current.state.currentItem;
+
+        if (currentItem === totalItems - 1) {
+          // If at the end, reset to the first item
+          carouselRef.current.goTo(0);
+        } else {
+          // Move to the next item
+          carouselRef.current.next();
+        }
       }
-    }, 5000); // Adjust the duration between slides as needed (8 seconds in this example)
+    }, 8000); // Adjust the duration between slides as needed (8 seconds in this example)
 
     return () => {
       clearInterval(interval);
     };
-  }, [currentSlide]);
-
+  }, []);
+    
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -95,15 +102,22 @@ const Feedbacks = () => {
           <Carousel
             ref={carouselRef}
             isRTL={false}
-            pagination={true}
-            transitionMs={1000} // Set the duration for each item transition
-            enableAutoPlay={false} // Disable auto play
+            pagination={true} // Show dots for paging
+            transitionMs={8000} // Animation speed
+            easing={"ease"} // transition easing pattern
+            tiltEasing={"ease"} // transition easing pattern for the tilt
+            //initialActiveIndex={currentIndex} // Set the initial index
+            //onTransitionEnd={handleTransitionEnd} // Handle the end of transition
             enableTilt={false}
-            breakPoints={breakPoints}
-            showArrows={false}
-            focusOnSelect={false}
-            itemPadding={[0, 1]}
-            initialActiveIndex={currentSlide}
+            //itemsToShow={3}   // Number of visible items
+            //itemsToScroll={1} // Number of items to scroll
+            breakPoints={breakPoints} // Collection of objects with a width, itemsToShow, and itemsToScroll
+            initialActiveIndex={0} // The initial active index when the component mounts
+            showArrows={false} // Show the arrow buttons
+            focusOnSelect={false} // Go to item on click
+            itemPadding={[0, 1]} // A padding for each element
+            enableAutoPlay={true} // Enable or disable auto play
+            autoPlaySpeed={8000} // Set auto play speed (ms)
           >
             {testimonials.map((testimonial, index) => (
               <div key={testimonial.name}>

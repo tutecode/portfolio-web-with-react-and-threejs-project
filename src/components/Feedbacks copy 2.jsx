@@ -13,7 +13,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
-  linkedin,
+  linkedin, // Add the linkedin prop
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -26,8 +26,9 @@ const FeedbackCard = ({
 
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
+          {/* Add an anchor tag for the name with the href attribute */}
           <a
-            href={linkedin}
+            href={linkedin} // Use the nameLink prop as the href
             target="_blank"
             rel="noopener noreferrer"
             className='text-white font-medium text-[16px] blue-text-gradient hover:underline'
@@ -54,6 +55,8 @@ const FeedbackCard = ({
   </motion.div>
 );
 
+
+
 const Feedbacks = () => {
   const breakPoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
@@ -65,16 +68,13 @@ const Feedbacks = () => {
   const carouselRef = useRef(null);
 
   useEffect(() => {
-    const totalItems = testimonials.length;
+    const totalItems = carouselRef.current.state.totalItems;
     const interval = setInterval(() => {
-      if (currentSlide === totalItems - 1) {
-        setCurrentSlide(0);
-        carouselRef.current.goTo(0);
-      } else {
-        setCurrentSlide((prevSlide) => prevSlide + 1);
-        carouselRef.current.goTo(currentSlide + 1);
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % totalItems);
+      if (carouselRef.current) {
+        carouselRef.current.goTo(currentSlide);
       }
-    }, 5000); // Adjust the duration between slides as needed (8 seconds in this example)
+    }, 8000); // Adjust the duration between slides as needed (8 seconds in this example)
 
     return () => {
       clearInterval(interval);
@@ -97,7 +97,7 @@ const Feedbacks = () => {
             isRTL={false}
             pagination={true}
             transitionMs={1000} // Set the duration for each item transition
-            enableAutoPlay={false} // Disable auto play
+            enableAutoPlay={true} // Disable auto play
             enableTilt={false}
             breakPoints={breakPoints}
             showArrows={false}

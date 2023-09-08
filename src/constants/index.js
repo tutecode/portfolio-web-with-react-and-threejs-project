@@ -245,7 +245,7 @@ import {
     },
     {
       testimonial:
-        "Matias is a dynamic AI and data science professional with creativity, adaptability, and a strong work ethic. Highly recommended for his diverse skills and impact-driven approach.",
+        "Matías is a dynamic AI and data science professional with creativity, adaptability, and a strong work ethic. Highly recommended for his diverse skills and impact-driven approach.",
       name: "Jhonatan Camasca",
       designation: "Data Scientist",
       company: "Deloitte",
@@ -254,7 +254,7 @@ import {
     },
     {
       testimonial:
-        "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
+        "Matías is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
       name: "Lucio Rapetti",
       designation: "AI Developer",
       company: "AnyoneAI",
@@ -263,22 +263,22 @@ import {
     },
     {
       testimonial:
-        "Matias, a colleague for over a year, shines in problem-solving and commitment in our 6-month Machine Learning project. A skilled professional and friend; highly recommended.",
+        "Matías, a colleague for over a year, shines in problem-solving and commitment in our 6-month Machine Learning project. A skilled professional and friend; highly recommended.",
       name: "Yessid Rios",
       designation: "Tutor ML Engineer",
       company: "AnyoneAI",
       image: "https://media.licdn.com/dms/image/C5603AQGRThEUbMUAEQ/profile-displayphoto-shrink_100_100/0/1637270545970?e=1699488000&v=beta&t=K1IAl-OS-0w1vSGwx64VM96i-dyzltPp0YZA8fLnioY",
       linkedin: "https://www.linkedin.com/in/yessid-rios-prada/"
     },
-    //{
-    //  testimonial:
-    //    "Matias is an exceptional AI and Data Science professional known for his collaboration, quick learning, and unwavering positivity. Highly recommended for his dedication and adaptability.",
-    //  name: "Lucio Rapetti",
-    //  designation: "ML Engineer",
-    //  company: "AnyoneAI",
-    //  image: "https://media.licdn.com/dms/image/D4D03AQEuaLhNfNGY_Q/profile-displayphoto-shrink_100_100/0/1689263899742?e=1699488000&v=beta&t=cMztC04f77UoTJ9G1JTe32q8LwRjwqQvMYYsB0OFURE",
-    //  linkedin: "https://www.linkedin.com/in/lucio-f-rapetti-ab619235/"
-    //},
+    {
+      testimonial:
+        "Matías consistently showed a positive attitude, solving challenges creatively, contributing to the team with skill, open to collaboration, dedicated, and detail-oriented. Would gladly collaborate again.",
+      name: "Fabian Moreno",
+      designation: "Data Scientist",
+      company: "AnyoneAI",
+      image: "https://media.licdn.com/dms/image/D4E03AQGI4XXepxb9BQ/profile-displayphoto-shrink_200_200/0/1688091954918?e=1699488000&v=beta&t=SiPeUDFMZs4knH_fnHSJrrna1fcsYzYWMjMhfKUTX10",
+      linkedin: "https://www.linkedin.com/in/fabianmorenodata/"
+    },
   ];
   
   const projects = [

@@ -289,7 +289,7 @@ import {
   
   const projects = [
     {
-      name: "Credit Guard",
+      name: "Credit Risk Analysis",
       description:
         "API service that is backed by a machine learning model that will accept a financial profile and will be able to predict a credit risk score for that profile.",
       tags: [
@@ -343,7 +343,7 @@ import {
       category: "AI",
     },
     {
-      name: "Marketing Agency",
+      name: "Sentiment Analysis on Movies Review",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -360,9 +360,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: agency,
-      source_code_link: "https://github.com/tutecode/FullStack-with-Django-and-React",
-      category: "web_development",
+      image: moviesreview,
+      source_code_link: "https://github.com/tutecode/sentiment-analysis-on-movies-reviews/tree/main",
+      category: "AI",
     },
     {
       name: "Sentiment Analysis on Movies Review",
@@ -385,6 +385,50 @@ import {
       image: moviesreview,
       source_code_link: "https://github.com/tutecode/sentiment-analysis-on-movies-reviews/tree/main",
       category: "AI",
+    },
+    {
+      name: "Sentiment Analysis on Movies Review",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: moviesreview,
+      source_code_link: "https://github.com/tutecode/sentiment-analysis-on-movies-reviews/tree/main",
+      category: "AI",
+    },
+    {
+      name: "Marketing Agency",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: agency,
+      source_code_link: "https://github.com/tutecode/FullStack-with-Django-and-React",
+      category: "web_development",
     },
     {
       name: "Vehicle Classification",

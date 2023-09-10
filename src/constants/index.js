@@ -309,15 +309,15 @@ import {
       tags: [
         {
           name: "Python",
-          color: "tag-red-gradient-dark",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
           name: "FastAPI",
-          color: "tag-yellow-gradient-dark",
+          color: "tag-green-white-gradient-darker",
         },
         {
           name: "Scikit-learn",
-          color: "tag-green-blue-gradient-dark",
+          color: "tag-blue-orange-gradient-darker",
         },
         {
           name: "Pandas",
@@ -513,7 +513,7 @@ import {
     {
       name: "Gente Toxica App",
       description:
-        "Evaluating a newly launched cryptocurrency initiative at Mercado Libre Brasil using three datasets (transactions, users, accounts) from Dec 23 to Dec 31, post-launch period.",
+        "A mobile app that summarizes Bernardo Stamateas' book 'Toxic People,' assisting you in dealing with toxic individuals, and has achieved over a thousand downloads on the Play Store.",
       tags: [
         {
           name: "Flutter",
@@ -535,7 +535,7 @@ import {
     {
       name: "Fumanyi App",
       description:
-        "Evaluating a newly launched cryptocurrency initiative at Mercado Libre Brasil using three datasets (transactions, users, accounts) from Dec 23 to Dec 31, post-launch period.",
+        "A mobile app inspired by the popular card game created by Poppular Games. Enjoy smoking-friendly gameplay with friends, where cigarette filling is entirely at players' discretion and responsibility. XD",
       tags: [
         {
           name: "Flutter",
@@ -583,11 +583,11 @@ import {
       tags: [
         {
           name: "Power BI",
-          color: "blue-text-gradient",
+          color: "tag-light-blue-indigo-gradient-darker",
         },
         {
           name: "Tableau",
-          color: "green-text-gradient",
+          color: "tag-amber-red-gradient-darker",
         },
       ],
       image: cryptochallenge,
@@ -597,23 +597,23 @@ import {
     {
       name: "Google Vertex AI Hackathon",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application chatbot using Vertex AI and PaLM for natural language understanding, integrated with FastAPI for seamless communication and real-time responses.",
       tags: [
         {
           name: "Python",
-          color: "orange-text-gradient",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
           name: "FastAPI",
-          color: "pink-text-gradient",
+          color: "tag-green-white-gradient-darker",
         },
         {
           name: "Vertex AI",
-          color: "blue-text-gradient",
+          color: "tag-radial-gradient",
         },
         {
           name: "PaLM2",
-          color: "green-text-gradient",
+          color: "tag-deep-orange-brown-gradient-darker",
         },
       ],
       image: vertexai,

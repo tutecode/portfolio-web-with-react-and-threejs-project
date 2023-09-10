@@ -10,7 +10,7 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 
-const ProjectCard = ({
+export const ProjectCard = ({
   index,
   name,
   description,
@@ -71,7 +71,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const aiProjects = projects.filter((project) => project.category === "AI");
+  //const aiProjects = projects.filter((project) => project.category === "AI");
   const web3Projects = projects.filter((project) => project.category === "Web3");
   const webDevProjects = projects.filter((project) => project.category === "web_development");
   const mobileAppProjects = projects.filter((project) => project.category === "mobile_app");
@@ -97,7 +97,7 @@ const Works = () => {
         setCurrentSlide((prevSlide) => prevSlide + 1);
         carouselRef.current.goTo(currentSlide + 1);
       }
-    }, 5000); // Adjust the duration between slides as needed (8 seconds in this example)
+    }, 13000); // Adjust the duration between slides as needed (12 seconds in this example)
 
     return () => {
       clearInterval(interval);
@@ -106,39 +106,8 @@ const Works = () => {
 
   return (
     <>
-      {/* Subtitle for AI Projects */}
-      <motion.div variants={textVariant()} className="">
-        <h3 className={`${styles.sectionHeadText2}`}>Artificial Intelligence Projects:</h3>
-      </motion.div>
-
-      {/* Carousel for AI Projects */}
-      <Carousel
-        ref={carouselRef}
-        isRTL={false}
-        pagination={true} // Show dots for paging
-        transitionMs={5000} // Animation speed
-        easing={"ease"} // transition easing pattern
-        tiltEasing={"ease"} // transition easing pattern for the tilt
-        enableTilt={false} // The “bump” animation when reaching the last item
-        //itemsToShow={3}   // Number of visible items
-        //itemsToScroll={1} // Number of items to scroll
-        breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
-        initialActiveIndex={currentSlide} // The initial active index when the component mounts
-        showArrows={false} // Show the arrow buttons
-        focusOnSelect={false} // Go to item on click
-        itemPadding={[0, 1]} // A padding for each element
-        enableAutoPlay={true} // Enable or disable auto play
-        autoPlaySpeed={2000} // Set auto play speed (ms)
-      >
-        {aiProjects.map((project, index) => (
-          <div key={`ai-project-${index}`}>
-            <ProjectCard index={index} {...project} />
-          </div>
-        ))}
-      </Carousel>
-
       {/* Subtitle for Web Devolopment Projects */}
-      <motion.div variants={textVariant()} className="mt-12">
+      <motion.div variants={textVariant()} className="mt-12 mb-4">
         <h3 className={`${styles.sectionHeadText2}`}>Web Development Projects:</h3>
       </motion.div>
 
@@ -169,7 +138,7 @@ const Works = () => {
       </Carousel>
 
       {/* Subtitle for Mobile Apps Projects */}
-      <motion.div variants={textVariant()} className="mt-12">
+      <motion.div variants={textVariant()} className="mt-12 mb-4">
         <h3 className={`${styles.sectionHeadText2}`}>Mobile Apps Projects:</h3>
       </motion.div>
 
@@ -199,7 +168,7 @@ const Works = () => {
       </Carousel>
 
       {/* Subtitle for Hackatones Projects */}
-      <motion.div variants={textVariant()} className="mt-12">
+      <motion.div variants={textVariant()} className="mt-12 mb-4">
         <h3 className={`${styles.sectionHeadText2}`}>Hackathon Projects:</h3>
       </motion.div>
 

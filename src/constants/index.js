@@ -47,6 +47,9 @@ import {
   gentetoxica,
   fumanyi,
   topo,
+  linkedin,
+  freqtradeworks,
+  cryptowebapp,
 } from "../assets";
   
   export const navLinks = [
@@ -61,6 +64,12 @@ import {
     {
       id: "contact",
       title: "Contact",
+    },
+    {
+      id: "linkedin",
+      title: "LinkedIn",
+      icon: linkedin, // You can use an icon class or an SVG here
+      url: "https://www.linkedin.com/in/matias-gomeze/",
     },
   ];
   
@@ -433,6 +442,50 @@ import {
       ],
       image: homecreditrisk,
       source_code_link: "https://github.com/tutecode/home-credit-default-risk",
+      category: "AI",
+    },
+    {
+      name: "Freqtrade Strategies",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: freqtradeworks,
+      source_code_link: "https://github.com/tutecode/freq-strategies",
+      category: "AI",
+    },
+    {
+      name: "Crypto Price Web",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cryptowebapp,
+      source_code_link: "https://github.com/tutecode/Cryptocurrency-Price-Web-App",
       category: "AI",
     },
     {

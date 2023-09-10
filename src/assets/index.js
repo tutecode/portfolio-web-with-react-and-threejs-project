@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import linkedin from "./linkedin.svg";
 
 // Import about icons
 import dataanalyst from "./about/dataanalyst.png";
@@ -60,12 +61,17 @@ import homecreditrisk from "./works/homecreditrisk.png";
 import gentetoxica from "./works/gentetoxica.png";
 import fumanyi from "./works/fumanyi.png";
 import topo from "./works/topo.png";
+import freqtradeworks from "./works/freqtradeworks.jpg";
+import cryptowebapp from "./works/cryptowebapp.png";
 
 
 
 
 
 export {
+  cryptowebapp,
+  freqtradeworks,
+  linkedin,
   fumanyi,
   gentetoxica,
   agency,

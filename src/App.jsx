@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 import ExperienceTitle from './components/ExperienceTitle'; // Importa el componente de título
 import WorksTitle from './components/WorksTitle'; // Importa el componente de título
+import WorksAI from './components/WorksAI';
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
         <Experience />
         <Tech />
         <WorksTitle />
+        <WorksAI/>
         <Works />
         <Feedbacks />
         <div className='relative z-0'>

@@ -96,7 +96,7 @@ const Feedbacks = () => {
             ref={carouselRef}
             isRTL={false}
             pagination={true}
-            transitionMs={1000} // Set the duration for each item transition
+            transitionMs={2000} // Set the duration for each item transition
             enableAutoPlay={false} // Disable auto play
             enableTilt={false}
             breakPoints={breakPoints}

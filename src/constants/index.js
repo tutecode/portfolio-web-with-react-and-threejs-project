@@ -42,6 +42,11 @@ import {
   machinelearningengineer,
   cryptochallenge,
   vertexai,
+  imageclassification,
+  homecreditrisk,
+  gentetoxica,
+  fumanyi,
+  topo,
 } from "../assets";
   
   export const navLinks = [
@@ -295,47 +300,47 @@ import {
       tags: [
         {
           name: "Python",
-          color: "orange-text-gradient",
+          color: "tag-red-gradient-dark",
         },
         {
           name: "FastAPI",
-          color: "green-text-gradient",
+          color: "tag-yellow-gradient-dark",
         },
         {
           name: "Scikit-learn",
-          color: "new-color-text-gradient",
+          color: "tag-green-blue-gradient-dark",
         },
         {
           name: "Pandas",
-          color: "new-color3-text-gradient",
+          color: "tag-purple-pink-gradient-dark",
         },
         {
           name: "Numpy",
-          color: "blue-text-gradient2",
+          color: "tag-cyan-teal-gradient-dark",
         },
         {
           name: "HTML",
-          color: "new-color2-text-gradient",
+          color: "tag-gold-orange-gradient-dark",
         },
         {
           name: "CSS",
-          color: "pink-text-gradient",
+          color: "tag-red-purple-gradient-dark",
         },
         {
           name: "Redis",
-          color: "yellow-text-gradient2",
+          color: "tag-blue-cyan-gradient-dark",
         },
         {
           name: "Docker",
-          color: "blue-text-gradient",
+          color: "tag-orange-pink-gradient-dark",
         },
         {
           name: "Tensorflow",
-          color: "new-color5-text-gradient",
+          color: "tag-deep-purple-indigo-gradient-darker",
         },
         {
           name: "Jupyter Notebook",
-          color: "red-blue-text-gradient",
+          color: "tag-teal-purple-gradient-darker",
         },
       ],
       image: creditguard,
@@ -365,7 +370,7 @@ import {
       category: "AI",
     },
     {
-      name: "Sentiment Analysis on Movies Review",
+      name: "Vehicle Classification",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -382,12 +387,12 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: moviesreview,
-      source_code_link: "https://github.com/tutecode/sentiment-analysis-on-movies-reviews/tree/main",
+      image: vehicleclassification,
+      source_code_link: "https://github.com/tutecode/vehicle-classification",
       category: "AI",
     },
     {
-      name: "Sentiment Analysis on Movies Review",
+      name: "Image Classification ML API",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -404,8 +409,30 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: moviesreview,
-      source_code_link: "https://github.com/tutecode/sentiment-analysis-on-movies-reviews/tree/main",
+      image: imageclassification,
+      source_code_link: "https://github.com/tutecode/image-classification-ml-api",
+      category: "AI",
+    },
+    {
+      name: "Home Credit Default Risk",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: homecreditrisk,
+      source_code_link: "https://github.com/tutecode/home-credit-default-risk",
       category: "AI",
     },
     {
@@ -431,26 +458,70 @@ import {
       category: "web_development",
     },
     {
-      name: "Vehicle Classification",
+      name: "Gente Toxica App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Evaluating a newly launched cryptocurrency initiative at Mercado Libre Brasil using three datasets (transactions, users, accounts) from Dec 23 to Dec 31, post-launch period.",
       tags: [
         {
-          name: "react",
+          name: "Flutter",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Dart",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Android",
+          color: "green-text-gradient",
         },
       ],
-      image: vehicleclassification,
-      source_code_link: "https://github.com/tutecode/vehicle-classification",
-      category: "AI",
+      image: gentetoxica,
+      source_code_link: "https://github.com/tutecode/gente_toxica_app",
+      category: "mobile_app",
+    },
+    {
+      name: "Fumanyi App",
+      description:
+        "Evaluating a newly launched cryptocurrency initiative at Mercado Libre Brasil using three datasets (transactions, users, accounts) from Dec 23 to Dec 31, post-launch period.",
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Android",
+          color: "green-text-gradient",
+        },
+      ],
+      image: fumanyi,
+      source_code_link: "https://github.com/tutecode/fumanyi_app/tree/master",
+      category: "mobile_app",
+    },
+    {
+      name: "Botonera Topo App",
+      description:
+        "Evaluating a newly launched cryptocurrency initiative at Mercado Libre Brasil using three datasets (transactions, users, accounts) from Dec 23 to Dec 31, post-launch period.",
+      tags: [
+        {
+          name: "Flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Dart",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Android",
+          color: "green-text-gradient",
+        },
+      ],
+      image: topo,
+      source_code_link: "https://github.com/tutecode/botonera_topo_app",
+      category: "mobile_app",
     },
     {
       name: "Crypto Challenge",
@@ -476,16 +547,20 @@ import {
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
         {
-          name: "",
+          name: "Python",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "FastAPI",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Vertex AI",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "PaLM2",
           color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
         },
       ],
       image: vertexai,

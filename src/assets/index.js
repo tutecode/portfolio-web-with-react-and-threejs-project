@@ -55,11 +55,21 @@ import moviesreview from "./works/moviesreview.jpg";
 import vehicleclassification from "./works/vehicleclassification.png";
 import cryptochallenge from "./works/cryptochallenge.png";
 import vertexai from "./works/vertexai.png";
+import imageclassification from "./works/imageclassification.png";
+import homecreditrisk from "./works/homecreditrisk.png";
+import gentetoxica from "./works/gentetoxica.png";
+import fumanyi from "./works/fumanyi.png";
+import topo from "./works/topo.png";
+
+
 
 
 
 export {
+  fumanyi,
+  gentetoxica,
   agency,
+  homecreditrisk,
   creditguard,
   moviesreview,
   vehicleclassification,
@@ -107,4 +117,6 @@ export {
   machinelearningengineer,
   cryptochallenge,
   vertexai,
+  imageclassification,
+  topo,
 };

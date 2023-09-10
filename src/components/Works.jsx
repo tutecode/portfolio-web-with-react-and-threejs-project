@@ -113,22 +113,22 @@ const Works = () => {
 
       {/* Carousel for Web Devolopment Projects */}
       <Carousel
+        ref={carouselRef}
         isRTL={false}
         pagination={true} // Show dots for paging
-        transitionMs={8000} // Animation speed
+        transitionMs={12000} // Animation speed
         easing={"ease"} // transition easing pattern
         tiltEasing={"ease"} // transition easing pattern for the tilt
         enableTilt={false} // The “bump” animation when reaching the last item
         //itemsToShow={3}   // Number of visible items
         //itemsToScroll={1} // Number of items to scroll
         breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
-        initialActiveIndex={0} // The initial active index when the component mounts
+        initialActiveIndex={currentSlide} // The initial active index when the component mounts
         showArrows={false} // Show the arrow buttons
-        focusOnSelect={false} // Go to item on click
-        itemPadding={[0, 48]} // A padding for each element
+        focusOnSelect={true} // Go to item on click
+        itemPadding={[0, 1]} // A padding for each element
         enableAutoPlay={true} // Enable or disable auto play
-        autoPlaySpeed={8000} // Set auto play speed (ms)
-
+        autoPlaySpeed={currentSlide === webDevProjects.length - 1 ? 3000 : 13000}
       >
         {webDevProjects.map((project, index) => (
           <div key={`ai-project-${index}`}>
@@ -144,21 +144,22 @@ const Works = () => {
 
       {/* Carousel for Mobile Apps Projects */}
       <Carousel
+        ref={carouselRef}
         isRTL={false}
         pagination={true} // Show dots for paging
-        transitionMs={8000} // Animation speed
+        transitionMs={12000} // Animation speed
         easing={"ease"} // transition easing pattern
         tiltEasing={"ease"} // transition easing pattern for the tilt
         enableTilt={false} // The “bump” animation when reaching the last item
         //itemsToShow={3}   // Number of visible items
         //itemsToScroll={1} // Number of items to scroll
         breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
-        initialActiveIndex={0} // The initial active index when the component mounts
+        initialActiveIndex={currentSlide} // The initial active index when the component mounts
         showArrows={false} // Show the arrow buttons
-        focusOnSelect={false} // Go to item on click
-        itemPadding={[0, 48]} // A padding for each element
+        focusOnSelect={true} // Go to item on click
+        itemPadding={[0, 1]} // A padding for each element
         enableAutoPlay={true} // Enable or disable auto play
-        autoPlaySpeed={8000} // Set auto play speed (ms)
+        autoPlaySpeed={currentSlide === mobileAppProjects.length - 1 ? 3000 : 13000}
       >
         {mobileAppProjects.map((project, index) => (
           <div key={`mobile-app-project-${index}`}>
@@ -174,21 +175,22 @@ const Works = () => {
 
       {/* Carousel for Hackatones Projects */}
       <Carousel
+        ref={carouselRef}
         isRTL={false}
         pagination={true} // Show dots for paging
-        transitionMs={8000} // Animation speed
+        transitionMs={12000} // Animation speed
         easing={"ease"} // transition easing pattern
         tiltEasing={"ease"} // transition easing pattern for the tilt
         enableTilt={false} // The “bump” animation when reaching the last item
         //itemsToShow={3}   // Number of visible items
         //itemsToScroll={1} // Number of items to scroll
         breakPoints={breakPoints} // Collection of objects with a width, itemsToShow and itemsToScroll
-        initialActiveIndex={0} // The initial active index when the component mounts
+        initialActiveIndex={currentSlide} // The initial active index when the component mounts
         showArrows={false} // Show the arrow buttons
-        focusOnSelect={false} // Go to item on click
-        itemPadding={[0, 48]} // A padding for each element
+        focusOnSelect={true} // Go to item on click
+        itemPadding={[0, 1]} // A padding for each element
         enableAutoPlay={true} // Enable or disable auto play
-        autoPlaySpeed={8000} // Set auto play speed (ms)
+        autoPlaySpeed={currentSlide === hackatonProjects.length - 1 ? 3000 : 13000}
       >
         {hackatonProjects.map((project, index) => (
           <div key={`hackaton-project-${index}`}>

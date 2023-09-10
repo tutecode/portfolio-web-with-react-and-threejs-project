@@ -26,35 +26,48 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Function to scroll to a section with smooth behavior
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <nav
       className={`${styles.paddingX
         } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
         }`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            <span className="sm:block hidden"> | JavaScript Mastery</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10 justify-center'>
+        <ul className="list-none hidden sm:flex flex-row gap-10 justify-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${active === nav.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer flex items-center`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => {
+                setActive(nav.title);
+                scrollToSection(nav.id); // Scroll to the section
+              }}
             >
               {nav.id === "linkedin" ? (
                 // Render the LinkedIn link with the icon
@@ -63,18 +76,18 @@ const Navbar = () => {
                 </a>
               ) : (
                 // Render other links
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <span>{nav.title}</span>
               )}
             </li>
           ))}
         </ul>
 
         {/* Mobile menu */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
 
@@ -83,7 +96,7 @@ const Navbar = () => {
             className={`${!toggle ? "hidden" : "flex"
               } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -92,9 +105,18 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
+                    scrollToSection(nav.id); // Scroll to the section
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.id === "linkedin" ? (
+                    // Render the LinkedIn link with the icon
+                    <a href={nav.url} target="_blank" rel="noopener noreferrer">
+                      <img src={linkedin} alt="LinkedIn" className="linkedin-icon" />
+                    </a>
+                  ) : (
+                    // Render other links
+                    <span>{nav.title}</span>
+                  )}
                 </li>
               ))}
             </ul>

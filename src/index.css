@@ -329,6 +329,7 @@
   padding: 2px 10px;
 }
 
+/* NLP */
 .tag-cyan-teal-gradient {
   background: linear-gradient(to right, #00bcd4, #009688); /* Cyan to Teal gradient */
   color: white;
@@ -345,6 +346,8 @@
 
 
 /* Define classes for gradient background tags with darkness */
+
+/* Flask */
 .tag-red-gradient-dark {
   background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 85, 0, 0.8)); /* Red gradient with darkness */
   color: rgba(255, 255, 255, 0.83);
@@ -352,9 +355,10 @@
   padding: 2px 10px;
 }
 
+/* JavaScript */
 .tag-yellow-gradient-dark {
   background: linear-gradient(to right, rgba(255, 234, 0, 0.8), rgba(255, 199, 0, 0.8)); /* Yellow gradient with darkness */
-  color: rgba(255, 255, 255, 0.83);
+  color: white;
   border-radius: 50px;
   padding: 2px 10px;
 }
@@ -373,6 +377,7 @@
   padding: 2px 10px;
 }
 
+/* BeautifulSoup4 */ 
 .tag-cyan-teal-gradient-dark {
   background: linear-gradient(to right, rgba(0, 188, 212, 0.8), rgba(0, 150, 136, 0.8)); /* Cyan to Teal gradient with darkness */
   color: rgba(255, 255, 255, 0.83);
@@ -394,9 +399,10 @@
   padding: 2px 10px;
 }
 
+/* Tailwind CSS */
 .tag-blue-cyan-gradient-dark {
   background: linear-gradient(to right, rgba(33, 150, 243, 0.8), rgba(0, 188, 212, 0.8)); /* Blue to Cyan gradient with darkness */
-  color: rgba(255, 255, 255, 0.83);
+  color: white;
   border-radius: 50px;
   padding: 2px 10px;
 }
@@ -415,9 +421,10 @@
   padding: 2px 10px;
 }
 
+/* ReactJS */
 .tag-indigo-blue-gradient-dark {
   background: linear-gradient(to right, rgba(63, 81, 181, 0.8), rgba(33, 150, 243, 0.8)); /* Indigo to Blue gradient with darkness */
-  color: rgba(255, 255, 255, 0.83);
+  color: white;
   border-radius: 50px;
   padding: 2px 10px;
 }
@@ -437,6 +444,7 @@
   padding: 2px 10px;
 }
 
+/* Django */
 .tag-red-pink-gradient-darker {
   background: linear-gradient(to right, rgba(244, 67, 54, 0.9), rgba(233, 30, 99, 0.9)); /* Red to Pink gradient with darker background */
   color: white;
@@ -444,6 +452,7 @@
   padding: 2px 10px;
 }
 
+/* Android */ 
 .tag-green-lime-gradient-darker {
   background: linear-gradient(to right, rgba(76, 175, 80, 0.9), rgba(139, 195, 74, 0.9)); /* Green to Lime gradient with darker background */
   color: white;
@@ -458,6 +467,7 @@
   padding: 2px 10px;
 }
 
+/* Dart */
 .tag-blue-cyan-gradient-darker {
   background: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(0, 188, 212, 0.9)); /* Blue to Cyan gradient with darker background */
   color: white;
@@ -465,6 +475,7 @@
   padding: 2px 10px;
 }
 
+/* Flutter */
 .tag-indigo-blue-grey-gradient-darker {
   background: linear-gradient(to right, rgba(63, 81, 181, 0.9), rgba(96, 125, 139, 0.9)); /* Indigo to Blue Grey gradient with darker background */
   color: white;

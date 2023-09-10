@@ -58,6 +58,10 @@ import {
       title: "About",
     },
     {
+      id: "experience",
+      title: "Experience",
+    },
+    {
       id: "work",
       title: "Work",
     },
@@ -359,19 +363,23 @@ import {
     {
       name: "Sentiment Analysis on Movies Review",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An NLP project: focused on pre-processing for binary sentiment analysis of movie reviews, classifying them as positive or negative.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Python",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "NLP",
+          color: "tag-cyan-teal-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Jupyter Notebook",
+          color: "tag-teal-purple-gradient-darker",
+        },
+        {
+          name: "Docker",
+          color: "tag-orange-pink-gradient-dark",
         },
       ],
       image: moviesreview,
@@ -381,19 +389,23 @@ import {
     {
       name: "Vehicle Classification",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developing a machine learning model for automatic vehicle make and model recognition from images, enhancing user experience and saving time in a car inventory management system.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Python",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Tensorflow",
+          color: "tag-deep-purple-indigo-gradient-darker",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Jupyter Notebook",
+          color: "tag-teal-purple-gradient-darker",
+        },
+        {
+          name: "Docker",
+          color: "tag-orange-pink-gradient-dark",
         },
       ],
       image: vehicleclassification,
@@ -403,19 +415,27 @@ import {
     {
       name: "Image Classification ML API",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Automated image classification using a TensorFlow CNN with a web UI and Flask API for seamless uploading and prediction of over 1000 categories, improving efficiency.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Python",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Flask",
+          color: "tag-red-gradient-dark",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Redis",
+          color: "tag-blue-cyan-gradient-dark",
+        },
+        {
+          name: "Docker",
+          color: "tag-orange-pink-gradient-dark",
+        },
+        {
+          name: "Tensorflow",
+          color: "tag-deep-purple-indigo-gradient-darker",
         },
       ],
       image: imageclassification,
@@ -425,19 +445,27 @@ import {
     {
       name: "Home Credit Default Risk",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Binary classification project: Predicting loan repayment ability. Model determines if a client will have payment difficulties, using ROC-AUC as the evaluation metric for probability predictions.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Python",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Jupyter Notebook",
+          color: "tag-teal-purple-gradient-darker",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Scikit-learn",
+          color: "tag-blue-orange-gradient-darker",
+        },
+        {
+          name: "Pandas",
+          color: "tag-purple-pink-gradient-dark",
+        },
+        {
+          name: "Numpy",
+          color: "tag-cyan-teal-gradient-dark",
         },
       ],
       image: homecreditrisk,
@@ -447,19 +475,23 @@ import {
     {
       name: "Freqtrade Strategies",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developing algorithmic trading strategies for financial markets, leveraging data analysis and automation to make informed buy/sell decisions and optimize portfolio performance.",
       tags: [
         {
           name: "Python",
-          color: "blue-text-gradient",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Scikit-learn",
+          color: "tag-blue-orange-gradient-darker",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Pandas",
+          color: "tag-purple-pink-gradient-dark",
+        },
+        {
+          name: "Numpy",
+          color: "tag-cyan-teal-gradient-dark",
         },
       ],
       image: freqtradeworks,
@@ -469,19 +501,19 @@ import {
     {
       name: "Crypto Price Web",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Creating a cryptocurrency web app with Streamlit, featuring beautiful visuals and interactive elements for a user-friendly experience in tracking and analyzing digital assets.",
       tags: [
         {
           name: "Python",
-          color: "blue-text-gradient",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Pandas",
+          color: "tag-purple-pink-gradient-dark",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "BeautifulSoup4",
+          color: "tag-cyan-teal-gradient-dark",
         },
       ],
       image: cryptowebapp,
@@ -491,19 +523,27 @@ import {
     {
       name: "Marketing Agency",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application, powered by Django and React, designed for a marketing agency. It features a secure login system, robust database management, and a dynamic blog for sharing industry insights and updates.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Python",
+          color: "tag-blue-yellow-gradient-darker",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "JavaScript",
+          color: "tag-yellow-gradient-dark",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Django",
+          color: "tag-red-pink-gradient-darker",
+        },
+        {
+          name: "ReactJS",
+          color: "tag-indigo-blue-gradient-dark",
+        },
+        {
+          name: "Tailwind",
+          color: "tag-blue-cyan-gradient-dark",
         },
       ],
       image: agency,
@@ -517,15 +557,15 @@ import {
       tags: [
         {
           name: "Flutter",
-          color: "blue-text-gradient",
+          color: "tag-indigo-blue-grey-gradient-darker",
         },
         {
           name: "Dart",
-          color: "green-text-gradient",
+          color: "tag-blue-cyan-gradient-darker",
         },
         {
           name: "Android",
-          color: "green-text-gradient",
+          color: "tag-green-lime-gradient-darker",
         },
       ],
       image: gentetoxica,
@@ -539,15 +579,15 @@ import {
       tags: [
         {
           name: "Flutter",
-          color: "blue-text-gradient",
+          color: "tag-indigo-blue-grey-gradient-darker",
         },
         {
           name: "Dart",
-          color: "green-text-gradient",
+          color: "tag-blue-cyan-gradient-darker",
         },
         {
           name: "Android",
-          color: "green-text-gradient",
+          color: "tag-green-lime-gradient-darker",
         },
       ],
       image: fumanyi,
@@ -557,19 +597,19 @@ import {
     {
       name: "Botonera Topo App",
       description:
-        "Evaluating a newly launched cryptocurrency initiative at Mercado Libre Brasil using three datasets (transactions, users, accounts) from Dec 23 to Dec 31, post-launch period.",
+        "Experience the ultimate audio soundboard mobile app. Easily access and play a variety of customizable sound clips, enhancing your messaging and entertainment with just a tap.",
       tags: [
         {
           name: "Flutter",
-          color: "blue-text-gradient",
+          color: "tag-indigo-blue-grey-gradient-darker",
         },
         {
           name: "Dart",
-          color: "green-text-gradient",
+          color: "tag-blue-cyan-gradient-darker",
         },
         {
           name: "Android",
-          color: "green-text-gradient",
+          color: "tag-green-lime-gradient-darker",
         },
       ],
       image: topo,

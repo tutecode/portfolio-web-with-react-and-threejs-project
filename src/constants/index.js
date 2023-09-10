@@ -70,6 +70,11 @@ import {
       title: "Contact",
     },
     {
+      id: "cv",
+      title: "CV",
+      url: "https://docs.google.com/document/d/1PNnXCfpwpFVng2pTTP_fLb4ZgrUYJBoFp6TDxZUgsyI/edit?usp=sharing",
+    },
+    {
       id: "linkedin",
       title: "LinkedIn",
       icon: linkedin, // You can use an icon class or an SVG here

@@ -53,8 +53,8 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Adrian &nbsp;
-            <span className="sm:block hidden"> | JavaScript Mastery</span>
+            Matías&nbsp;
+            <span className="sm:block hidden"> | AI Developer</span>
           </p>
         </Link>
 
@@ -74,6 +74,14 @@ const Navbar = () => {
                 <a href={nav.url} target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} alt="LinkedIn" className="linkedin-icon" />
                 </a>
+              ) : nav.id === "cv" ? (
+                // Render the CV link
+                <a
+                  href={nav.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-gray-500 rounded-lg px-3 py-1"
+                > CV </a>
               ) : (
                 // Render other links
                 <span>{nav.title}</span>
@@ -83,7 +91,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile menu */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        < div className="sm:hidden flex flex-1 justify-end items-center" >
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -92,7 +100,7 @@ const Navbar = () => {
           />
 
           {/* Mobile menu items */}
-          <div
+          < div
             className={`${!toggle ? "hidden" : "flex"
               } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
@@ -113,6 +121,14 @@ const Navbar = () => {
                     <a href={nav.url} target="_blank" rel="noopener noreferrer">
                       <img src={linkedin} alt="LinkedIn" className="linkedin-icon" />
                     </a>
+                  ) : nav.id === "cv" ? (
+                    // Render the CV link
+                    <a
+                      href={nav.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="border border-gray-500 rounded-lg px-3 py-1"
+                    > CV </a>
                   ) : (
                     // Render other links
                     <span>{nav.title}</span>
@@ -122,8 +138,8 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+      </div >
+    </nav >
   );
 };
 

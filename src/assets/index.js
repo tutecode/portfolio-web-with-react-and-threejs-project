@@ -36,6 +36,11 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
 import dart from "./tech/dart.png";
+import fastapi from "./tech/fastapi.png";
+import tensorflow from "./tech/tensorflow.png";
+import sql from "./tech/sql.png";
+import aws from "./tech/aws.png";
+
 
 //  Import company
 import meta from "./company/meta.png";
@@ -69,6 +74,10 @@ import cryptowebapp from "./works/cryptowebapp.png";
 
 
 export {
+  aws,
+  sql,
+  tensorflow,
+  fastapi,
   cryptowebapp,
   freqtradeworks,
   linkedin,

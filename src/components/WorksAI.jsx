@@ -31,7 +31,7 @@ const WorksAI = () => {
         setCurrentSlide((prevSlide) => prevSlide + 1);
         carouselRef.current.goTo(currentSlide + 1);
       }
-    }, 13000); // Adjust the duration between slides as needed (12 seconds in this example)
+    }, 5000); // Adjust the duration between slides as needed (12 seconds in this example)
 
     return () => {
       clearInterval(interval);
@@ -50,7 +50,7 @@ const WorksAI = () => {
         ref={carouselRef}
         isRTL={false}
         pagination={true} // Show dots for paging
-        transitionMs={12000} // Animation speed
+        transitionMs={2000} // Animation speed
         easing={"ease"} // transition easing pattern
         tiltEasing={"ease"} // transition easing pattern for the tilt
         enableTilt={false} // The “bump” animation when reaching the last item
@@ -62,7 +62,7 @@ const WorksAI = () => {
         focusOnSelect={true} // Go to item on click
         itemPadding={[0, 1]} // A padding for each element
         enableAutoPlay={true} // Enable or disable auto play
-        autoPlaySpeed={currentSlide === aiProjects.length - 1 ? 3000 : 13000}
+        autoPlaySpeed={currentSlide === aiProjects.length - 1 ? 1000 : 1000}
       >
         {aiProjects.map((project, index) => (
           <div key={`ai-project-${index}`}>

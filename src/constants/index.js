@@ -50,6 +50,10 @@ import {
   linkedin,
   freqtradeworks,
   cryptowebapp,
+  fastapi,
+  tensorflow,
+  sql,
+  aws
 } from "../assets";
   
   export const navLinks = [
@@ -72,7 +76,7 @@ import {
     {
       id: "cv",
       title: "CV",
-      url: "https://docs.google.com/document/d/1PNnXCfpwpFVng2pTTP_fLb4ZgrUYJBoFp6TDxZUgsyI/edit?usp=sharing",
+      url: "https://docs.google.com/document/d/1lwZV76onsyxAB1CbrkYEd6uhBP7iCh_zoh0ou9wFAX8/edit?usp=sharing",
     },
     {
       id: "linkedin",
@@ -117,6 +121,16 @@ import {
       icon: dart,
       experienceYears: "1",
     },
+    {
+      name: "FastAPI",
+      icon: fastapi,
+      experienceYears: "1",
+    },
+    {
+      name: "Tensorflow",
+      icon: tensorflow,
+      experienceYears: "1",
+    },
     //{
     //  name: "HTML 5",
     //  icon: html,
@@ -153,8 +167,8 @@ import {
     //  experienceYears: "1",
     //},
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "SQL",
+      icon: sql,
       experienceYears: "1",
     },
     //{
@@ -173,8 +187,13 @@ import {
     //  experienceYears: "1",
     //},
     {
-      name: "docker",
+      name: "Docker",
       icon: docker,
+      experienceYears: "1",
+    },
+    {
+      name: "AWS",
+      icon: aws,
       experienceYears: "1",
     },
   ];
